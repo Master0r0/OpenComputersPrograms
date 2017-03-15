@@ -10,7 +10,6 @@ To add a button:
     local gui = require("gui");
     local screen = component.proxy("04c7ec61-b048-41ad-aa9c-83dbb302c169");
     local gpu = component.proxy("c482e7a3-5bd1-4d30-911a-3a4a16aae22a");
-    
     gui.init(gpu,screen,0x000000);
     btn = gui.createButton(x,y,width,height,Background Color,"Text",Text Color,function() --[[ called on button press --]] end,function() --[[ called every cycle --]] end);
     gui.run();
@@ -22,7 +21,6 @@ To add a bar:
     local gui = require("gui");
     local screen = component.proxy("04c7ec61-b048-41ad-aa9c-83dbb302c169");
     local gpu = component.proxy("c482e7a3-5bd1-4d30-911a-3a4a16aae22a");
-    
     gui.init(gpu,screen,0x000000);
     bar = gui.createBar(x,y,width,height,bar color,background color,bool:display percentage,text color,function() --[[ called every cycle --]] end);
     gui.run();
