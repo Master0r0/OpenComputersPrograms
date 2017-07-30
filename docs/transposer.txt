@@ -1,0 +1,15 @@
+getTankLevel():function(side:number [, tank:number]):number -- Get the amount of fluid in the tank on the specified side.
+getInventoryName():function(side:number):string -- Get the the name of the inventory on the specified side of the device.
+areStacksEquivalent():function(side:number, slotA:number, slotB:number):boolean -- Get whether the items in the two specified slots of the inventory on the specified side of the device are equivalent (have shared OreDictionary IDs).
+getFluidInTank():function(side:number [, tank:number]):table -- Get a description of the fluid in the the tank on the specified side.
+getSlotStackSize():function(side:number, slot:number):number -- Get number of items in the specified slot of the inventory on the specified side of the device.
+store():function(side:number, slot:number, dbAddress:string, dbSlot:number):boolean -- Store an item stack description in the specified slot of the database with the specified address.
+getSlotMaxStackSize():function(side:number, slot:number):number -- Get the maximum number of items in the specified slot of the inventory on the specified side of the device.
+getAllStacks():function(side:number):userdata -- Get a description of all stacks in the inventory on the specified side of the device.
+getStackInSlot():function(side:number, slot:number):table -- Get a description of the stack in the inventory on the specified side of the device.
+transferFluid():function(sourceSide:number, sinkSide:number[, count:number]):number -- Transfer some items between two inventories.
+transferItem():function(sourceSide:number, sinkSide:number[, count:number[, sourceSlot:number[, sinkSlot:number]]]):boolean -- Transfer some items between two inventories.
+compareStacks():function(side:number, slotA:number, slotB:number[, checkNBT:boolean=false]):boolean -- Get whether the items in the two specified slots of the inventory on the specified side of the device are of the same type.
+getTankCapacity():function(side:number [, tank:number]):number -- Get the capacity of the tank on the specified side.
+compareStackToDatabase():function(side:number, slot:number, dbAddress:string, dbSlot:number[, checkNBT:boolean=false]):boolean -- Compare an item in the specified slot in the inventory on the specified side with one in the database with the specified address.
+getInventorySize():function(side:number):number -- Get the number of slots in the inventory on the specified side of the device.
