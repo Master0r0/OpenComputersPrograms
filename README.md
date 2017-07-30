@@ -6,7 +6,6 @@ My GUI lib requires you to pass the gpu component and screen component id's in t
 
 To add a button:
 <code>
-
     local component = require("component");
     local gui = require("gui");
     local screen = component.proxy("04c7ec61-b048-41ad-aa9c-83dbb302c169");
@@ -19,7 +18,6 @@ To add a button:
 
 To add a bar:
 <code>
-
     local component = require("component");
     local gui = require("gui");
     local screen = component.proxy("04c7ec61-b048-41ad-aa9c-83dbb302c169");
@@ -29,3 +27,8 @@ To add a bar:
     gui.run();
     
 </code>
+
+# outputFunctions.lua
+A program for spitting out the component data for any component into a txt file.
+Args: ComponentName
+Example: outputFunctions.lua transposer - creates a file in home/functions called transposer.txt
