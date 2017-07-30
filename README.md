@@ -5,6 +5,7 @@ A repo of all my minecraft OpenComputers programs and libraries
 My GUI lib requires you to pass the gpu component and screen component id's in the init along with a background color.
 
 To add a button:
+
 <code>
     local component = require("component");
     local gui = require("gui");
@@ -13,10 +14,10 @@ To add a button:
     gui.init(gpu,screen,0x000000);
     btn = gui.createButton(x:num,y:num,width:num,height:num,Background Color:hex,"Text":string,Text Color:hex,function() --[[ called on button press --]] end,function() --[[ called every cycle --]] end);
     gui.run();
-    
 </code>
 
 To add a bar:
+
 <code>
     local component = require("component");
     local gui = require("gui");
@@ -25,7 +26,6 @@ To add a bar:
     gui.init(gpu,screen,0x000000);
     bar = gui.createBar(x:num,y:num,width:num,height:nun,bar color:hex,background color:hex,display percentage:bool,text color:hex,function() --[[ called every cycle --]] end);
     gui.run();
-    
 </code>
 
 # outputFunctions.lua
